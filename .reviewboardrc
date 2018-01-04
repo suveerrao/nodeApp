@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "http://35.194.201.148:8081/"
+REPOSITORY = "nodeApp"
+REPOSITORY_TYPE = "git"
+BRANCH = "dev"
+LAND_DEST_BRANCH = "master"
