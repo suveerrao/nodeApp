@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  awesome:
+  nodeapp:
    image: suveer/nodeapp
    ports:
      - 8080
@@ -22,7 +22,7 @@ services:
   proxy:
     image: dockercloud/haproxy
     depends_on:
-      - awesome
+      - nodeapp
     environment:
       - BALANCE=leastconn
     volumes:
